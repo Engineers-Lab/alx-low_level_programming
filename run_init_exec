@@ -1,0 +1,16 @@
+
+#!/bin/bash
+echo -n "give the file name"
+read fname
+echo -n "give the commit msg"
+read commitmsg
+chmod u+x $fname
+echo chmod done
+echo "adding files to git stage"
+git add .
+echo "adding file to git done"
+echo "commiting with msg $commitmsg"
+git commit -m " $commitmsg "
+echo "done commiting"
+git push
+echo "done pushing"
