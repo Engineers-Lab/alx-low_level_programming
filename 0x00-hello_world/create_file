@@ -1,0 +1,5 @@
+#!/bin/bash
+echo give me file name
+read fname
+echo "#!/bin/bash">$fname
+emacs $fname
