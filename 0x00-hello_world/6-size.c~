@@ -10,6 +10,7 @@ int main(void)
 {
 	long long int llintType;
 	long int lintType;
+
 	print("Size of a char: %c byte(s)\n", sizeof(char));
 	print("Size of an int: %d byte(s)\n", sizeof(int));
 	print("Size of a long int: %ld byte(s)\n", sizeof(lint));
