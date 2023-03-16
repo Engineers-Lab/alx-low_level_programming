@@ -1,6 +1,7 @@
 #include <stdio.h>
-
 /**
+*    main - print with puts()
+*
 *    Description: This function prints a string to console
 *    Return: 0 if the program succed
 */
