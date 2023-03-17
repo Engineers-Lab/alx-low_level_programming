@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
 *main - convert to lowercase
 *
@@ -14,6 +15,6 @@ int main(void)
 	i = 0;
 	for (i = 0; i < n; i++)
 		putchar(tolower(alphabet[i]));
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
