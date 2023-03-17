@@ -25,7 +25,7 @@ int main(void)
 		printf("is positive\n");
 	} else
 	{
-		prinff("is zero\n");
+		prinf("is zero\n");
 	}
 	return (0);
 }
