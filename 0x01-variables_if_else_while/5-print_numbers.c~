@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - convert alphabets to lower then to uppercase
+*main - single digit numbers in base 10
 *
 *Return: 0
 */
@@ -8,11 +8,8 @@ int main(void)
 {
 	int i;
 
-	for (i = 97; i < 123; i++)
-		if (i == 113 || i == 101)
-			continue;
-		else
-			putchar(i);
+	for (i = 48; i < 58; i++)
+		putchar(i)
 	putchar('\n');
 	return (0);
 }
