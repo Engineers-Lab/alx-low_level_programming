@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <ctype.h>
+/**
+*main - convert alphabets to lower then to uppercase
+*
+*Return: 0
+*/
+int main(void)
+{
+	int i
+	for (i = 97; i < 123; i++)
+		putchar(tolower(alpha[i]));
+	for (i = 65; i < 91; i++)
+		putchar(i)
+	putchar('\n')
+}
