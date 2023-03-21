@@ -7,7 +7,8 @@ int main(void)
 {
 	char word[] = "_putchar";
 	int count = _count_word(word);
-	for (int i=0; i < count; i++)
+	int i;
+	for (i = 0; i < count; i++)
 	{
 		_putchar(word[i]);
 	}
