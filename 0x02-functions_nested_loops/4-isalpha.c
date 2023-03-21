@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_isalpha - checks for numbers
- *
+ *@c: the correspanding int in ASCII table
  *Return: 1 if true
  */
 int _isalpha(int c)
