@@ -10,10 +10,14 @@ void jack_bauer(void)
 	int m = 0;
 	int sec = 0;
 	int sec01=0;
+	int max_h = 10;
 
 	for (h = 0; h < 3; h++)
 	{
-		for (m = 0; m < 10; m++)
+		if (h == 2)
+			max_h = 4;
+
+		for (m = 0; m < max_h; m++)
 		{
 			for(sec = 0; sec < 10; sec++)
 			{
@@ -21,8 +25,10 @@ void jack_bauer(void)
 				{
 					_putchar('0' + h);
 					_putchar('0' + m);
+					_putchar(':');
 					_putchar('0' + sec);
 					_putchar('0' + sec01);
+					_putchar('\n');
 				}
 			}
 		}
