@@ -19,7 +19,7 @@ void jack_bauer(void)
 
 		for (m = 0; m < max_h; m++)
 		{
-			for(sec = 0; sec < 10; sec++)
+			for(sec = 0; sec < 6; sec++)
 			{
 				for (sec01 = 0; sec01 < 10; sec01++)
 				{
