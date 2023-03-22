@@ -19,7 +19,7 @@ void times_table(void)
 			res = j * i;
 			if (res < 10)
 			{
-				if (j > 0 && j < 9)
+				if (j > 0 && j < 10)
 				{
 					_putchar(32);
 					_putchar(32);
@@ -28,7 +28,7 @@ void times_table(void)
 				if (j < 9)
 					_putchar(44);
 			}
-			else if (res > 9)
+			else if (res > 10)
 			{
 				if (j > 0 && j < 9)
 					_putchar(32);
