@@ -32,4 +32,5 @@ int main(void)
 		printf("%c", 32);
 	}
 	printf("\n");
+	return (0);
 }
