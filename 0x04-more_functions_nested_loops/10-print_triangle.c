@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *print_diagonal - print given number to form a triangle
- *@n: number of lines
+ *print_triangle - print given number to form a triangle
+ *@size: number of lines
  *
  *Return: nothing
  */
