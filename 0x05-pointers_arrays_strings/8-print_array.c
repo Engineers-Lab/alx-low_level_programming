@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  *print_array - print a nomber of elements from an array
  *@a: array
