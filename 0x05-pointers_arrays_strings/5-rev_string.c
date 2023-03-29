@@ -9,18 +9,20 @@
 void rev_string(char *s)
 {
 	int len = 0;
-	char *p;
 	int j = 0;
+	char *p = s;
+	char rev = s[0];
 
 	while (s[len] != '\0')
 	{
 		len++;
 	}
-	p = &s[0];
-	printf("_____");
-	for (j = 0; j < len; j++)
+	len = len - 1;
+	for (j = 0; j <= len; j++)
 	{
-		s[j] = *(p)++;
-		printf("%c is at j: %d\n", *(p++), j);
+		rev = s[len];
+		*(p + len) = s[j];;
+		*(p + j) = rev;
+		len--;
 	}
 }
