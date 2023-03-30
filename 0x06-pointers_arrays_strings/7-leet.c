@@ -9,7 +9,7 @@ char *leet(char *s)
 {
 	char lowAlpha[] = {'a', 'e', 'o', 't', 'l'};
 	char upperAlpha[] = {'A', 'E', 'O', 'T', 'L'};
-	int repNum[] = {4, 3, 0, 7, 1};
+	char repNum[] = {'4', '3', '0', '7', '1'};
 	int i = 0;
 	int j = 0;
 
@@ -19,8 +19,6 @@ char *leet(char *s)
 		{
 			if (s[i] == lowAlpha[j] || s[i] == upperAlpha[j])
 				s[i] = repNum[j];
-			else
-				continue;
 		}
 		i++;
 	}
