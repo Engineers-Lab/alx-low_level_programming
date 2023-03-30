@@ -19,6 +19,8 @@ char *leet(char *s)
 		{
 			if (s[i] == lowAlpha[j] || s[i] == upperAlpha[j])
 				s[i] = repNum[j];
+			else
+				continue;
 		}
 		i++;
 	}
