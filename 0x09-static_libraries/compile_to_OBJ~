@@ -1,0 +1,7 @@
+#!/bin/bash
+mydir="."
+
+for f in "$mydir"/*.c; do
+    gcc -g -c basename $f
+done
+echo "done"

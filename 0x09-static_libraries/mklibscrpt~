@@ -1,0 +1,13 @@
+#!/bin/bash
+mydir="."
+declare -a file_holder
+obj_files=''
+for f in "$mydir"/*.o; do
+    file_holder+=($(basename $f))
+    obj_files=$obj_files & ' ' & $(basename $f)
+done
+
+#obj_files=$(for i in "${file_holder[*]}"; do "$i"; done)
+echo $obj_files
+ar rc libmy.a $obj_files
+echo "done"
