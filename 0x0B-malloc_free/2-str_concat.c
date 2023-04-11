@@ -2,6 +2,20 @@
 #include <stdlib.h>
 #include <stddef.h>
 /**
+ *str_size - size of the string
+ *@str: string
+ *
+ *Return: int size
+ */
+int str_size(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
+/**
  *str_concat - concatenates 2 strings
  *@s1: string 1
  *@s2: srting 2
@@ -18,16 +32,10 @@ char *str_concat(char *s1, char *s2)
 	char *ps;
 
 	if (s1 != NULL)
-	{
-		while (s1[i] != '\0')
-			i++;
-	}
+		i = str_size(s1);
 	if (s2 != NULL)
-	{
-		while (s2[j] != '\0')
-			j++;
-	}
-	size = j + i + 2;
+		j = str_size(s2);
+	size = j + i;
 	ps = malloc(sizeof(char) * size);
 	if (ps == NULL)
 		return (NULL);
@@ -57,5 +65,6 @@ char *str_concat(char *s1, char *s2)
 		ps[k] = s2[t];
 		t++;
 	}
+	ps[k] = '\0';
 	return (ps);
 }
