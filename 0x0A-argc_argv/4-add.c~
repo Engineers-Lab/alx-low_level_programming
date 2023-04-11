@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+/**
+ *main - add function
+ *@argc: nb of args
+ *@argv: vector args
+ *
+ *Return: 0 if success otherwise 1
+ */
+int main(int argc, char *argv[])
+{
+	int result = 0;
+	int i;
+	char c;
+
+	for (i = 1; i < argc; i++)
+	{
+		c = argv[i];
+		if (isdigit(c))
+			printf("%s", "digit")
+		result += atoi(c);
+	}
+	printf("%d\n", result);
+	return (0);
+}
