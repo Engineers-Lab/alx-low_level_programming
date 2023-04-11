@@ -31,14 +31,16 @@ char *str_concat(char *s1, char *s2)
 	ps = malloc(sizeof(char) * size);
 	if (ps == NULL)
 		return (NULL);
-	if (s1 == NULL)
+	if (s1 == NULL && s2 != NULL)
 	{
-		ps = s2;
+		for (k = 0; k < j; k++)
+			ps[k] = s2[k];
 		return (ps);
 	}
-	if (s2 == NULL)
+	if (s2 == NULL && s1 != NULL)
 	{
-		ps = s1;
+		for (k = 0; k < i; k++)
+			ps[k] = s1[k];
 		return (ps);
 	}
 	if (s1 == NULL && s2 == NULL)
