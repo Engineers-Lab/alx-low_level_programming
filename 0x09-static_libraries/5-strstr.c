@@ -6,4 +6,6 @@
  *
  *Return: a character or string!!
  */
-char *_strstr(char *haystack, char *needle);
+char *_strstr(char *haystack, char *needle)
+{
+}
