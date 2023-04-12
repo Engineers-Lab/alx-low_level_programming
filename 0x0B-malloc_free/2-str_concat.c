@@ -40,9 +40,15 @@ char *str_concat(char *s1, char *s2)
 	if (ps == NULL)
 		return (NULL);
 	if (s1 == NULL && s2 != NULL)
-		return (s2);
+	{
+		ps = s2;
+		return (ps);
+	}
 	if (s2 == NULL && s1 != NULL)
-		return (s1);
+	{
+		ps = s1;
+		return (ps);
+	}
 	if (s1 == NULL && s2 == NULL)
 		return ('\0');
 	for (k = 0; k < i; k++)
