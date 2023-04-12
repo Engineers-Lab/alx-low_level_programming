@@ -14,21 +14,21 @@ int **alloc_grid(int width, int height)
 	int i = 0;
 	int j = 0;
 	int w = 0;
-	int **pint = (int **)malloc(sizeof(int *) * width);;
+	int **pint;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	*pint = (int *)malloc(sizeof(int) * height);
+	pint = (int **)malloc(sizeof(int *) * height);
 	for (w = 0; w < width; w++)
-		pint[w] = (*pint + height * w);
+		pint[w] = malloc(sizeof(int) * width);
 	if (pint == NULL)
 	{
 		return (NULL);
 	}
-	while (i < width)
+	while (i < height)
 	{
 		j = 0;
-		while (j < height)
+		while (j < width)
 		{
 			pint[i][j] = 0;
 			j++;
