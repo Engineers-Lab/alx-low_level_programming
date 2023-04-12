@@ -31,32 +31,21 @@ char *str_concat(char *s1, char *s2)
 	int t = 0;
 	char *ps;
 
-	if (s1 != NULL)
-		i = str_size(s1);
-	if (s2 != NULL)
-		j = str_size(s2);
-	size = j + i + 1;
-	ps = malloc(sizeof(char) * size);
+	ps = malloc(str_size(s1) + str_size(s2) + 1);
 	if (ps == NULL)
 		return (NULL);
 	if (s1 == NULL && s2 != NULL)
 	{
-		ps = s2;
-		return (ps);
+		for (i = 0; i < str_size(s1); i++)
+			ps[i] = s1[i];
 	}
 	if (s2 == NULL && s1 != NULL)
 	{
-		ps = s1;
-		return (ps);
-	}
-	if (s1 == NULL && s2 == NULL)
-		return ('\0');
-	for (k = 0; k < i; k++)
-		ps[k] = s1[k];
-	for (k = i; k < size; k++)
-	{
-		ps[k] = s2[t];
-		t++;
+		for (j = 0; j < str_size(s2); j++)
+		{
+			ps[i] = s2[j];
+			i++;
+		}
 	}
 	ps[k] = '\0';
 	return (ps);
