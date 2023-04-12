@@ -40,26 +40,13 @@ char *str_concat(char *s1, char *s2)
 	if (ps == NULL)
 		return (NULL);
 	if (s1 == NULL && s2 != NULL)
-	{
-		for (k = 0; k < j; k++)
-			ps[k] = s2[k];
-		return (ps);
-	}
+		return (s2);
 	if (s2 == NULL && s1 != NULL)
-	{
-		for (k = 0; k < i; k++)
-			ps[k] = s1[k];
-		return (ps);
-	}
+		return (s1);
 	if (s1 == NULL && s2 == NULL)
-	{
-		ps = '\0';
-		return (ps);
-	}
+		return ('\0');
 	for (k = 0; k < i; k++)
-	{
 		ps[k] = s1[k];
-	}
 	for (k = i; k < size; k++)
 	{
 		ps[k] = s2[t];
