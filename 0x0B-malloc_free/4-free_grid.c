@@ -1,5 +1,5 @@
 #include "main.h"
-#include <strlib.h>
+#include <stdlib.h>
 /**
  *free_grid - deallocate memomry space
  *@grid: the grid
