@@ -26,9 +26,6 @@ char *str_concat(char *s1, char *s2)
 {
 	int i = 0;
 	int j = 0;
-	int size = 0;
-	int k = 0;
-	int t = 0;
 	char *ps;
 
 	ps = malloc(str_size(s1) + str_size(s2) + 1);
@@ -47,6 +44,6 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
-	ps[k] = '\0';
+	ps[i] = '\0';
 	return (ps);
 }
