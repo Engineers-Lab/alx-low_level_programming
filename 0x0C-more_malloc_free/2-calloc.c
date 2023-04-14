@@ -19,6 +19,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	for (i = 0; i < (int)nmemb; i++)
-		p[i] = 48;
+		*(p + i) = 0;
 	return ((void *)p);
 }
