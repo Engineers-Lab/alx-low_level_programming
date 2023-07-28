@@ -1,9 +1,0 @@
-#include "main.h"
-/**
- *_strstr - a function
- *@s: a string
- *@c: a character
- *
- *Return: a character or string!!
- */
-char *_strstr(char *s, char c);

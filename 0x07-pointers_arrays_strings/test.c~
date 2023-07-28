@@ -1,0 +1,10 @@
+#include <string.h>
+#include <stdio.h>
+void main(void)
+{
+	char word[] = "blabla food";
+	char set[] = "blaf";
+
+	i = strspn(word, set);
+	printf("nomber is %d", i);
+}
